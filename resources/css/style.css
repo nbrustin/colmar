@@ -1,3 +1,15 @@
+/* General styles */
+
+.banner-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.subheading {
+  font-size: bold;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
 
 /* Header */
 
@@ -34,46 +46,60 @@ header li {
   background-color: skyblue;
 }
 
-/* Banner */
+/* Banner section code*/
 
+/* Use banner and column containers for all 4 sections */
+/* New plan: label each banner container separately. this will make things easier */
 
-
-
-/* Banner1 take 2 */
-/* This is going way better! */
-
-.banner-container {
+.banner-container1, .banner-container2, .banner-container3, .banner-container4 {
   display: flex;
   flex-direction: row;
-  background-color: lightgray;
   height: auto;
   width: 100%;
-}
-.banner-container img {
-  width: 60%;
-  height: 30rem;
-  margin: 32px 24px;
+  border: 1px solid red;
 }
 
-.text-container {
+.column1 {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  margin: 32px 24px;
+  border: 1px solid green;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin-top: 32px;
+  border: 1px solid blue;
+}
+
+/* Banner1 take 3 SUCCESS!*/
+
+.banner-container1 {
+  background-color: lightgray;
+}
+
+.first-banner-img {
+  width: 100%;
+}
+.banner-container1 .column2 {
+  height: auto;
   justify-content: center;
-  border: 1px solid red;
-  height: 30rem;
-  margin: 32px 0;
-  width: 20%;
+  margin-bottom: 32px;
 }
 
-.text-container h1 {
-  font-size: 2rem;
-  font-weight: bold;
+.stuff-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid teal;
+  width: 60%;
 }
 
-.text-container h2 {
-  font-size: bold;
-  font-size: 1.3rem;
-  line-height: 1.2;
+.banner-container1 .column2 h2 {
   margin: 15px 0;
 }
 
@@ -87,72 +113,71 @@ header li {
   color: white;
   margin: 8px 0;
 }
-/* Banner2 */
 
-.banner2-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.column1 {
-  border: 1px solid green;
-  width: 60%;
-  display: flex;
-  margin: 32px 24px;
-  flex-direction: column;
-}
+/* Banner2 take 2*/
 
-.column1 h1 {
-  font-size: 3rem;
-  font-weight: bold;
+.banner-container2 .column1 .banner-title {
   margin: 32px 0 24px 0
 }
 
-.column1 img {
+.banner-container2 .column1 img {
   width: 100%;
 }
+
 .latin {
   font-size: 1.5rem;
   line-height: 1.5;
 }
 
-.column2 {
-  border: 1px solid yellow;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  border-left: 1px solid gray;
-  /* margin: 32px 0 32px 0; */
+.tagline {
+  margin: 32px 0;
 }
 
-.orientation-box {
-  margin-top: 16px;
+.banner-container2 .column2 {
+  margin-bottom: 32px;
+  height: auto;
 }
 
 .orientation-box, .campus-box, .lecture-box {
   display: flex;
   flex-direction: row;
+  border: 1px solid green;
+  width: 100%;
 }
 
-.lecture-box {
-  margin-bottom: 32px;
-}
-.image {
+.orientation-box .image, .campus-box .image, .lecture-box .image {
   width: 35%;
-  height: auto;
+  height: 100%;
+}
+
+.orientation-box .image {
+  margin: 0 24px 16px 16px;
+}
+
+.campus-box .image {
   margin: 16px 24px 16px 16px;
 }
+
+.lecture-box .image {
+  margin: 16px 24px 0 16px
+}
+
 .text-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid pink;
   width: 65%
+}
+
+.details {
+  margin: 8px 0;
 }
 
 /* Banner 3 */
 /* I'm hoping this goes better than the other sections */
 /* It's already going better! */
-.banner3-container {
+.banner-container3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,9 +186,7 @@ header li {
   width: 100%;
 }
 
-.banner3-container h1{
-  font-size: 3rem;
-  font-weight: bold;
+.banner-container3 .banner-title{
   margin-top: 32px;
 }
 

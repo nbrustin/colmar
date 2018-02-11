@@ -277,3 +277,18 @@ header li {
   height: 100%;
   margin: 16px 16px;
 }
+
+/* Footer  */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin: 16px 0 32px 24px;
+}
+
+.terms-privacy {
+  margin: 16px 0 32px 0;
+}

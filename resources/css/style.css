@@ -4,14 +4,19 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-.banner-title {
-  font-size: 2rem;
+.site-container {
+  width: 100%;
+}
+
+.banner-title, .banner-title4 {
+  font-size: 2.5rem;
   font-weight: bold;
 }
+
 .subheading {
   font-family: 'Roboto', sans-serif;
   font-size: bold;
-  font-size: 1.3rem;
+  font-size: 2rem;
   line-height: 1.2;
 }
 
@@ -22,7 +27,15 @@ body {
 
 a {
   color: white;
+  text-decoration: none;
+  transition: font-size .2s ease .2s;
 }
+
+a:hover {
+  font-size: 1.5rem;
+
+}
+
 /* Header */
 
 header {
@@ -70,12 +83,27 @@ header li {
   opacity: .5;
 }
 
+.mobile-header {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+
+  header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2A6CB0;
+  }
+}
+
 /* Banner section code*/
 
-/* Use banner and column containers for all 4 sections */
-/* New plan: label each banner container separately. this will make things easier */
-
-.banner-container1, .banner-container2, .banner-container3, .banner-container4 {
+.banner-container1, .banner-container2 {
   display: flex;
   flex-direction: row;
   height: auto;
@@ -100,7 +128,24 @@ header li {
   border: 1px solid blue;
 }
 
-/* Banner1 take 3 SUCCESS!*/
+@media only screen and (max-width: 470px) {
+  .banner-container1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column1 {
+    margin: 0 0;
+    width: 100%;
+  }
+
+  .column2 {
+    margin: 32px 16px;
+    width: auto;
+  }
+}
+
+/* Banner1 */
 
 .banner-container1 {
   color: white;
@@ -109,6 +154,7 @@ header li {
 .first-banner-img {
   width: 100%;
 }
+
 .banner-container1 .column2 {
   height: auto;
   justify-content: center;
@@ -116,14 +162,11 @@ header li {
 }
 
 .stuff-box {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   background-color: #2A6CB0;
   border-radius: 25px;
   padding: 10px;
   border: 1px solid teal;
-  width: 60%;
+  width: 80%;
 }
 
 .banner-container1 .column2 h2 {
@@ -134,8 +177,7 @@ header li {
   display: flex;
   justify-content: center;
   background-color: #FFAB2D;
-  transition-property: background-color;
-  transition-duration: 1.5s;
+  transition: all .2s ease .2s;
   border-radius: 10px;
   padding: 5px;
 }
@@ -148,9 +190,21 @@ header li {
   color: white;
   font-size: 1.4rem;
   margin: 8px 0;
+  transition: font-size .2s ease .2s;
 }
 
-/* Banner2 take 2*/
+.start-box span:hover {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 470px) {
+
+  .stuff-box {
+    width: auto;
+  }
+}
+
+/* Banner2 */
 
 .banner-container2 {
   color: white;
@@ -210,16 +264,20 @@ header li {
   margin: 8px 0;
 }
 
+@media only screen and (max-width: 470px) {
+  .column1 {
+    display: none;
+  }
+}
+
 /* Banner 3 */
-/* I'm hoping this goes better than the other sections */
-/* It's already going better! */
+
 .banner-container3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: black;
-  /* background-color: #4882BF; */
   width: 100%;
 }
 
@@ -264,9 +322,7 @@ header li {
   margin-top: 10px;
 }
 
-.course h3 {
-  font-size: 2rem;
-  font-weight: 500;
+.banner-container3 .course .subheading {
   margin: 16px 0 8px 16px;
 }
 
@@ -283,11 +339,26 @@ header li {
 
 /* Banner 4 */
 
+.banner-container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: lightgray;
+  border: 1px solid red;
+}
+
 .banner-title4 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 32px 0;
-  text-align: center;
+  margin-top: 32px;
+  background-color: #2A6CB0;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
 }
 
 .banner-container4 video {

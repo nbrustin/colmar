@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700|Work+Sans:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
     <!-- Header -->
 
-    <div class="site-container">
+    <div role="presentation" class="site-container">
       <header>
         <div class="logo-container">
           <img src="./resources/images/ic-logo.svg" alt="Lion">
@@ -20,7 +21,7 @@
           <span><a class="academy" href="#">Academy</a></span>
         </div>
         <nav>
-          <ul>
+          <ul role="presentation">
             <li><a class="campus" href="#">On campus</a></li>
             <li class="bar"></li>
             <li><a class="online" href="#">Online</a></li>
@@ -34,7 +35,7 @@
 
       <!-- mobile header -->
 
-      <div class="mobile-header"> 
+      <div class="mobile-header">
         <img src="./resources/images/ic-logo.svg" alt="logo">
         <img src="./resources/images/ic-on-campus.svg" alt="desk">
         <img src="./resources/images/ic-online.svg" alt="computer screen">
@@ -62,7 +63,7 @@
 
       <div class="banner-container2">
         <div class="column1">
-          <img src="./resources/images/information-main.jpg" alt="guy reading book">
+          <img src="./resources/images/information-main.jpg" alt="man reading a book">
           <h1 class="banner-title">It doesn't hurt to keep practicing</h1>
           <p class="details">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           <p class="details">Emanuel, Sr Strategist at Hiring.com</p>
@@ -70,7 +71,7 @@
         <div class="column2">
           <div class="orientation-box">
             <img class="image" src="./resources/images/information-orientation.jpg" alt="overhead shot of students walking">
-            <div class="text-box">
+            <div role="presentation" class="text-box">
               <h2 class="subheading">Orientation date</h2>
               <span class="details">Tue 10/11 & Wed 10/12: 8am-3pm</span>
               <span><a class="read-more" href="#">Read more</a></span>
@@ -137,15 +138,14 @@
             <p class="details">Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
-      </div>
 
       <!-- Banner container 4 -->
 
       <div class="banner-container4">
         <h1 class="banner-title4">Thesis exhibit</h1>
-        <div class="column-container">
+        <div role="presentation" class="column-container">
           <div class="column1">
-            <video src="./resources/videos/thesis.mp4" autoplay poster="posterimage.jpg"></video>
+            <video aria-label="30 second video of slightly cloudy sky passing over a square building with many windwos" src="./resources/videos/thesis.mp4" autoplay poster="posterimage.jpg"></video>
             <h2 class="subheading">Reimagine urban</h2>
             <p class="details">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           </div>
@@ -167,6 +167,7 @@
           </div>
         </div>
       </div>
+
       <!-- Footer -->
 
       <footer>
